@@ -1,0 +1,40 @@
+# Dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+
+# Env & secrets — never commit keys
+.env
+.env.*
+*.pem
+*.key
+
+# Local runtime data (created by server.js at runtime)
+*.tmp.wav
+perssua-*.wav
+/tmp/
+
+# Audio / media captures
+*.wav
+*.mp3
+*.webm
+
+# OS & editors
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Logs
+*.log
+logs/
+
+# Playwright / test artifacts
+test-results/
+playwright-report/

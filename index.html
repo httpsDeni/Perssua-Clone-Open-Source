@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#000000">
+<meta name="color-scheme" content="dark">
+<meta name="description" content="Perssua">
+<title>Perssua</title>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-view="home">
+<header class="app-header">
+  <span class="title" id="brand">Perssua</span>
+  <span id="session-badge" class="badge">no session</span>
+  <button class="glass-button" id="session-pill" style="display:none" title="End session">● 00:00</button>
+  <span style="margin-left:auto"></span>
+  <button class="glass-button" id="lang-toggle" title="Idioma / Language">PT · EN</button>
+  <button class="header-icon-button" data-go="settings" data-i18n-title="Settings">⚙</button>
+  <button class="header-icon-button" data-quit data-i18n-title="Quit Perssua? (web demo: the tab stays open)">⏻</button>
+</header>
+<div id="app" class="app">
+  <aside class="side">
+    <nav id="nav" aria-label="Navigation">
+      <button data-go="home" class="active" data-i18n="Home">Home</button>
+      <button data-go="quick" data-i18n="Quick Meeting">Quick Meeting</button>
+      <button data-go="sessions" data-i18n="All Sessions">All Sessions</button>
+      <button data-go="assistants" data-i18n="Assistants">Assistants</button>
+      <button data-go="transcribe" data-i18n="Transcription">Transcription</button>
+      <button data-go="capture" data-i18n="Capture Screen">Capture Screen</button>
+      <button data-go="models" data-i18n="AI Sources">AI Sources</button>
+      <button data-go="settings" data-i18n="Settings">Settings</button>
+      <button data-go="logs" data-i18n="Logs">Logs</button>
+      <button data-go="legal" data-i18n="Legal">Legal</button>
+    </nav>
+    <div class="tray">
+      <span id="tray-label">Ready</span>
+      <span class="badge live" data-i18n="Open source · free forever">Open source · free forever</span>
+    </div>
+  </aside>
+  <main id="view" class="view" tabindex="-1"></main>
+</div>
+<div id="notch-root"></div>
+<div id="modal-root"></div>
+<script src="js/prompts.js"></script>
+<script src="js/store.js"></script>
+<script src="js/i18n.js"></script>
+<script src="js/async.js"></script>
+<script src="js/electronAPI.js"></script>
+<script src="js/sessions.js"></script>
+<script src="js/speech.js"></script>
+<script src="js/chat.js"></script>
+<script src="js/capture.js"></script>
+<script src="js/wavrec.js"></script>
+<script src="js/whisper.js"></script>
+<script src="js/meetaudio.js"></script>
+<script src="js/autoanswer.js"></script>
+<script src="js/views.js"></script>
+<script src="js/notch.js"></script>
+<script src="js/shortcuts.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
